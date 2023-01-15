@@ -45,7 +45,6 @@ vector<vector<int>>  neighbour_ids = {
 	/* 18 */	{13, 16},
 };
 
-int global_rank;
 
 Decision reciveVotes(
 	list<int> &childs, list<int> &finalChilds,
@@ -182,8 +181,6 @@ int main(int argc, char* argv[]) {
 	list<int> finalParents = {};
 
 	NodeType my_type = NO_TYPE;
-
-	global_rank = my_rank;
 
 	// ============================= Setup =============================
 	// exchange id and decide parents and childs
